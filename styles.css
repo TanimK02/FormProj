@@ -79,11 +79,93 @@ body {
     padding: 0 1rem;
 }
 
+.hero {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.hero p em {
+    font-style: italic;
+}
+
 .info {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     background: white;
     box-shadow: 0 5px 10px 1px lightgrey;
+}
+
+.info h2 {
+    font-size: 1rem;
+    color: rgb(53, 52, 52);
+    margin-bottom: 1rem;
+}
+
+.names,
+.contacts,
+.passwords {
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.label-container+.label-container {
+    margin-left: 3rem;
+}
+
+.label-container label {
+    color: rgba(53, 52, 52, 0.9);
+    display: block;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.label-container input,
+.label-container input:placeholder-shown {
+    min-width: 175px;
+    appearance: none;
+    border: 1px rgba(128, 128, 128, 0.219) solid;
+    border-radius: 2px;
+    height: 1.2rem;
+}
+
+.submission button {
+    padding: 0.7rem 2.25rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(89, 109, 73, 255);
+    color: white;
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.submission p {
+    font-size: 0.75rem;
+}
+
+.submission a {
+    color: rgba(89, 109, 73, 255);
+    font-weight: bold;
+}
+
+.submission a:linK,
+.submission a:visited {
+    color: rgba(89, 109, 73, 255);
+    text-decoration: none;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:focus {
+    border: 1px blue solid;
 }

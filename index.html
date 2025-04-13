@@ -26,29 +26,51 @@
             <div class="triplets hero">
                 <p>This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams.
-                    Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                    Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="triplets info">
                 <h2>Let's do this!</h2>
-                <div>
+                <div class="formInputs">
                     <div class="names">
-                        <label for="firstName">First Name</label>
-                        <input id="firstName" name="firstName" />
-                        <label for="lastName">First Name</label>
-                        <input id="lastName" name="lastName" />
+                        <div class="label-container">
+
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" minlength="1" maxlength="20" required name="firstName"
+                                placeholder="John" />
+                        </div>
+                        <div class="label-container">
+
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" minlength="1" maxlength="20" required name="lastName"
+                                placeholder="Smith" />
+                        </div>
                     </div>
                     <div class="contacts">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" />
-                        <label for="phone">Phone Number</label>
-                        <input id="phone" name="phone" />
+                        <div class="label-container">
+
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required placeholder="johnsmith89@gmail.com" />
+                        </div>
+                        <div class="label-container">
+
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" required placeholder="(999)-999-999" />
+                        </div>
                     </div>
                     <div class="passwords">
-                        <label for="password">Password</label>
-                        <input id="password" name="password" type="password" />
-                        <label for="confirmPass">Confirm Password</label>
-                        <input id="confirmPass" type="password" />
+                        <div class="label-container">
+
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" minlength="8" maxlength="60" required
+                                placeholder="********" />
+                        </div>
+                        <div class="label-container">
+
+                            <label for="confirmPass">Confirm Password</label>
+                            <input id="confirmPass" type="password" minlength="8" maxlength="60" required
+                                placeholder="********" />
+                        </div>
                     </div>
                 </div>
             </div>
